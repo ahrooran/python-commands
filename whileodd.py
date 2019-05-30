@@ -8,3 +8,4 @@ while a <= enterNum:
 	else:
 		print(a,'is Odd')
 	a+=1
+
