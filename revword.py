@@ -1,15 +1,21 @@
-try:
-	msg = input('Enter Message: ')
 
-	i=len(msg)-1
-	while i >=0:
-		x=split(msg[i],end='')
-		print(x)
+def reverse(word):
+	newword=''
+	i=len(word)-1
+	while i >= 0:
+		newword+=word[i]
 		i-=1
+	return newword
 
-except NameError:
-	print('there is an issue with the names ')
-except Exception:
-	print('threrefw')
-finally: 
-	print('whatt')
+msg = input('Enter Message: ')
+newmsg=''
+word=''
+
+for ch in msg:
+	if ch ==' ':
+		newmsg +=(reverse(word)+' ')
+		word=' '
+	else:
+		word += ch
+print(newmsg,reverse(word))
+
